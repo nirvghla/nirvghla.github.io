@@ -1,0 +1,33 @@
+<section id="recent-blog">
+  <div class="row top-offer">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>RECENT BLOG POSTS</h2>
+        <h4>NEWS</h4>
+      </div>
+      <div id="owlElement" class="owl-carousel">
+        <div class="row text-center">
+          <div class="col-md-3 box" *ngFor="let bodydata of bodyData; let i = index">
+            <div class="blog-box">
+              <div class="blog-box-image">
+                <img src="{{bodydata.thumbnailUrl}}" class="img-responsive" alt="">
+              </div>
+              <div class="blog-box-content">
+                <h4>{{bodydata.title}}</h4>
+                <p>{{bodydata.title}}</p>
+                <a href="" class="btn btn-default site-btn">Read More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- End Col -->
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
